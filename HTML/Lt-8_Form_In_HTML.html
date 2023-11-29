@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+      .hwtextbox{
+         color: red;
+         height: 20px;
+         width: 300px;
+      }
+    </style>
+</head>
+<body>
+    <h2>This is HTML FORM tutorial </h2>
+    <form action="backen.java">   <!--it is used to send/submit the form to backend-->
+        <div>                      <!--it is used to change the line insted of <br> tag-->
+             Name: <input type="text" name="myName" class="hwtextbox">
+         </div><br>
+         <div>
+            Role: <input type="text" name="myRole">    <!--these are used to take input and name="myRole" is used in backend to identify corresponding values-->
+         </div><br>
+         <div >
+            Email: <input type="email" name="myEmail" class="hwtextbox">
+         </div><br>
+         <div>
+            Date: <input type="date" name="myDate" >   <!--it is used to take input date where we can select date from calendr-->
+         </div><br>
+         <div>
+            Are you eligible? <input type="checkbox" name="myEligibilty">   <!--it is used to generate CheckBox-->
+         </div><br>
+         <div >
+            Bonus: <input type="number" name="myBonus" class="hwtextbox">
+         </div><br>
+         <div>
+            Gender: Male <input type="radio" name="myGender">     <!--it is used to generate radio button-->
+                    Female <input type="radio" name="myGender">
+                    Other <input type="radio" name="myGender">
+         </div><br>
+         <div>
+            Write about yorself: <br> <textarea name="myText" cols="90" rows="10"></textarea>  <!--it is used to generate text box-->
+         </div><br>
+         <di>
+            <label for="car"> Car</label>
+            <select name="myCar" id="car">        <!--it is used to generate select option where we can select the values-->
+                <option value="Ind"> Indica</option>
+                <option> Swift</option>
+                <option value="fort" selected> Fortuner</option>  <!--bydefault it is already selected-->
+            </select>
+         </di><br><br>
+         <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset">
+         </div>
+    </form>
+</body>
+</html>

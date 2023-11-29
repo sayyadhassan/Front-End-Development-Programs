@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            /* background-color: black; */
+           
+        }
+
+                                 /* NINJA TECHINUQUE TO ADD IMAGE IN BACKGROUND */
+        header::before{
+            content:"";
+            background: url('Background_Image.jpg') no-repeat center center/cover ;
+            /* Background image visible when the position is absloute and width and height is set  */
+            position: absolute;  
+            /* It is use to exact fit the background image to the screen  */ 
+            top:0;
+            bottom: 0;
+
+            height: 100%;
+            width: 100%;
+            /* To send background image in back    */
+            z-index: -1;
+            opacity: 0.5; 
+        } 
+
+        .navigation {
+            font-size: 25px;
+            /* This is use to chnge display order from horizontal to vertical  */
+            display: flex;
+        }
+
+        li {
+            list-style: none;    /* This is use to remove bullets */
+            padding: 17px 22px;
+        }
+
+        .sec {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 505px;
+            /* height:100vh; */
+            border: 2px solid yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+
+        section {
+            border: 2px solid red;
+            /* margin: 3px 23px; */
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 1100px;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        h1 {
+            color: rgb(233, 70, 97);
+            font-size: 4rem;
+            margin: 25px;
+        }
+
+        section p {
+            margin: 28px 9px;
+            color: rgb(77, 131, 231);
+            font-size: 25px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section::before {
+            content: "This is Before content";
+            color: red;
+            font-size: 34px;
+        }
+
+        section::after {
+            content: "This is After content";
+            color: green;
+            font-size: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <div class="sec">
+            <section>
+                <h1>Welcome to coding World</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum explicabo ullam laboriosam. Accusantium
+                    sequi ipsum quidem modi ducimus perferendis iure quasi veniam totam, maxime ut eius. Tempore, magni
+                    architecto! Laboriosam voluptate dignissimos nulla similique?</p>
+            </section>
+        </div>
+</body>
+
+</html>

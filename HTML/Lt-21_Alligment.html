@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alligment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 587px;
+            width: 900px;
+            border: 5px solid purple;
+            margin: 33px 33px;
+        }
+
+        .item {
+            border: 3px solid red;
+            margin: 12px 5px;
+            padding: 12px 9px;
+            background: rgb(148, 221, 52);
+            border-radius: 10px;
+        }
+
+        #fruits {
+            float: left;
+            width: 28%;
+        }
+
+        #computer {
+            float: right;
+            width: 28%;
+        }
+
+        #stationary {
+            /* to avoid overlap
+            clear: left;      
+            clear: right;
+            clear: both; */
+
+            float: left;
+            width: 99%;
+        }
+
+        /* Text Allingment */
+        p{
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            text-align: left;
+            /* text-align: right; */
+            /* text-align: center; */
+            /* text-align: justify; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruites</h3>
+            <p id="fruitsPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat
+                voluptatibus quam ex, asperiores odio, eos optio dolor minima, inventore error veniam perferendis
+                aspernatur consectetur reiciendis quia esse beatae voluptates sed. Laboriosam, temporibus id?Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Enim aliquam delectus blanditiis quae soluta mollitia eius
+                alias accusamus sit nisi magnam perferendis optio ullam ipsam laudantium, quibusdam totam voluptas
+                tenetur qui necessitatibus nobis quisquam!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="fruitsPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat
+                voluptatibus quam ex, asperiores odio, eos optio dolor minima, inventore error veniam perferendis
+                aspernatur consectetur reiciendis quia esse beatae voluptates sed. Laboriosam, temporibus id?Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Id consequatur praesentium ducimus sint laboriosam, ut
+                quam, ipsum consequuntur blanditiis rem hic harum doloremque nisi ratione. Eaque, consequatur! Maiores
+                dolore aspernatur, neque quo necessitatibus voluptate.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="fruitsPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat
+                voluptatibus quam ex, asperiores odio, eos optio dolor minima, inventore error veniam perferendis
+                aspernatur consectetur reiciendis quia esse beatae voluptates sed. Laboriosam, temporibus id?</p>
+        </div>
+    </div>
+</body>
+
+</html>

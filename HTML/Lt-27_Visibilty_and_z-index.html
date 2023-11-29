@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and z-index</title>
+    <style>
+        * {
+            /* It is used for that box size will not change according to content,
+            box size will fixe which we have given */
+            box-sizing: border-box;
+        }
+        
+        .box1 {
+            background-color: black;
+            color: white;
+            border: 3px solid salmon;
+            width: 280px;
+            height: 140px;
+            position: relative;
+            top: 34px;
+            /* It is used to bring the content/element in front, higer z-index value item will flow in front  */
+            z-index: 2;
+        }
+        
+        .box2 {
+            background-color: red;
+            border: 3px solid green;
+            width: 280px;
+            height: 140px;
+            position: relative;
+            top: 20px;
+            z-index: 0;
+        }
+        
+        .box3 {
+            /* Will hide the element  and also its space */
+            /* display: none; */
+
+            /* Will hide the element but show its empty space consume by the element */
+            visibility: hidden;
+            
+            background-color: pink;
+            border: 3px solid blue;
+            width: 280px;
+            height: 140px;
+        }
+        
+        .container {
+            border: 3px solid red;
+        }
+        
+        .box4 {
+            background-color: brown;
+            border: 3px solid orange;
+            width: 280px;
+            height: 140px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quisquam eligendi, tenetur
+        asperiores minus nesciunt ratione laudantium exercitationem veniam dolores!</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit accusamus quis
+        dolorem in porro voluptates dignissimos asperiores, libero natus?</div>
+    <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex consequuntur dolores fuga
+        voluptate maiores, neque vel nihil repellendus officiis.</div>
+    <div class="container">
+        <div class="box4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id totam obcaecati dolorem mollitia
+            nisi
+            aliquam suscipit eius vel reprehenderit pariatur!</div>
+    </div>
+</body>
+
+</html>

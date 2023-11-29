@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectro and More Designing</title>
+    <style>
+        .container {
+            border-color: 3px solid red;
+            background-color: rgb(147, 223, 147);
+            padding: 33px;
+            width: 565px;
+            /* This is used to alling in centre */
+            margin: 33px auto;
+        }
+
+        .btn {
+            background-color: rgb(111, 113, 226);
+            /* padding: auto; */
+            font-size: 20px;
+            border-radius: 4px;
+            /* It is use to remove default border of button */
+            border: none;
+            /*This is used to make consistance both 'Read More' and 'Contact Us' button while moving cursor on it */
+            cursor: pointer;
+        }
+
+        /* This effect will appear when we move cursor on 'Read More' & 'Contact Us' button */
+        .btn:hover {
+            background-color: aqua;
+            color: rgb(240, 8, 8);
+        }
+
+        a {
+            text-decoration: none;
+            /* This is used to remove underline from Read More button */
+            color: black;
+        }
+
+        /* This effect will appear when we move cursor on link/button */
+        /* a:hover{
+            color: blue;
+            background-color: gray;
+        } */
+
+        /* This effect will appear when we visit link atleast once */
+        a:visited {
+            background-color: yellow;
+        }
+
+        /* This effect will appear when we left-click/move cursor on link/buttom */
+        a:active {
+            background-color: red;
+        }
+
+        .box{
+            /* display: flex; */
+            position: relative;
+            /* border:2px solid red; */
+            width: 400px;
+            height: 50px;
+            margin-top: -70px;
+            margin-left: 380px;
+            justify-content: center;
+        }
+
+        p:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+        /* #bara{
+            /* border-end-start-radius: 3px solid green; 
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h3>This is HEADING</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, porro ullam ad, iste quae praesentium
+            soluta accusantium rerum officia velit tenetur eveniet numquam aspernatur nesciunt doloribus distinctio eum
+            iure tempora tempore sit sunt nisi.</p>
+    </div>
+    <div class="box">
+        <!-- Basically this is link but using property of CSS we give shape of button -->
+        <a href="https://google.com" target="_blank" class="btn">Read More</a>
+
+        <!-- This is button -->
+        <button class="btn">Contact Us</button>
+    </div>
+
+    </div>
+</body>
+
+</html>

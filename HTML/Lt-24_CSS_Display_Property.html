@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        header {
+            border: 3px solid red;
+            /* header is Block Element due to this we need to set width to move in centre before use of 'margin: auto' */
+            /* margin: 5px 79px 4px 79px; */
+            width: 1136px;
+            margin: auto;
+        }
+
+        img {
+            width: 90px;   /* This is used to set image size */
+            /* Basically this is Inline Element bydefault so before use of 'margin: auto' 
+            we need to use 'display: block' to get in centre */
+            display: block;
+            margin: auto;    /* This takes left and right equal margin and get placed in centre */
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .container{
+            border: 3px solid red;
+            width: 1133px;
+            margin: 8px auto;
+        }
+
+        .box{
+            border: 4px solid black;
+            background-color: grey;
+            margin: 14px ;
+            padding: 15px;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+      
+        
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="hassan.jpg" alt="">
+        <h3>This is my BOLOG to understand the concept of Display Property</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p class="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem, debitis impedit quos beatae
+                delectus distinctio et suscipit, commodi, eos veritatis corporis hic! Iste architecto alias adipisci?
+                Sit voluptatum nemo asperiores deserunt corporis ex! </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem, debitis impedit quos beatae
+                delectus distinctio et suscipit, commodi, eos veritatis corporis hic! Iste architecto alias adipisci?
+                Sit voluptatum nemo asperiores deserunt corporis ex! </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem, debitis impedit quos beatae
+                delectus distinctio et suscipit, commodi, eos veritatis corporis hic! Iste architecto alias adipisci?
+                Sit voluptatum nemo asperiores deserunt corporis ex! </p>
+        </div>
+    </div>
+</body>
+
+</html>

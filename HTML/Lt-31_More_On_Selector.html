@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selector</title>
+    <style>
+        h1{
+            color: white;
+            background-color: red;
+            text-align: center;
+        }
+
+        /* This property will apply to all the p (pragraph), no matter how much inside  */
+        /* div p{
+            color:yellow;
+            font-weight: bold;
+            background-color: green;
+        } */
+
+        /* This property will apply only for p (pragraph) which is inside div and also inside list  */
+        div li p{
+            color: green;
+            background-color: yellow;
+        }
+
+        /* This property will apply only p (pragraph ) which is just inside the div  */
+        div > p{
+            color: pink;
+            background-color: blue;
+        }
+
+
+        /* This property will apply only for p (paragraph) which is next sibling of div, means at the same level  */
+        div + p {
+            color: orange;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is paragraph of list<p></p></li>
+
+            </ul>
+            <p>This is paragrah </p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

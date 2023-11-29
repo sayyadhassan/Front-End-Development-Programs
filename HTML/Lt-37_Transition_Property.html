@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            /* Default width is 100% and height is depend on the height of its item  */
+            /* border:2px solid palevioletred; */
+        }
+        #box{
+            display:flex;
+            background-color: red;
+            /* This is use to set color width and height otherwise color will set to whole area of its parent/container  */
+            height: 200px;
+            width:200px;
+            justify-content: center;
+            align-items: center;
+
+            /* In transition property we give the name or define what we want to do in transition 
+            like- background-color,height-width or margin,font-size etc  */
+            transition-property: background-color;
+            /* transition-duration: 2s; */
+        
+            /* In starting transition will slow then fast  */
+            /* transition-timing-function: ease-in; */
+            /* The animation will fast at first, then slow down and end  */
+            /* transition-timing-function: ease-out; */
+            /* The transition will slow at first, then speed up and end */
+            /* transition-timing-function: ease-in-out; */
+            /* Transition will start after 2 second  */
+            /* transition-delay: 2s; */
+
+            /* Transition sort hand property in one line  */
+            /* transition: background-color 1s ease-in-out 2s; */
+
+            /* If we are having multiple properties and want to trnsition all, then we can use this syntax  */
+            transition: all 2s ease-in-out 0.5s;
+
+        }
+        #box:hover{
+            background-color: white;
+
+            height: 400px;
+            width: 500px;
+            border-radius: 50px;
+            font-size: 30px;
+        }
+
+        /* It also can be set on classes  */
+        .box2{
+            display:flex;
+            background-color: red;
+            /* This is use to set color width and height otherwise color will set to whole area of its parent/container  */
+            height: 200px;
+            width:200px;
+            justify-content: center;
+            align-items: center;
+
+            transition-property: background-color;
+            transition: all 2s ease-in-out 0.5s;
+        }
+
+        .box2:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">This is a BOX</div>
+        <div style=color:white class="box2">This is Box 2</div>
+    </div>
+</body>
+</html>

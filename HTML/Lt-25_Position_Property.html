@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <!-- CSS Position types: static(default), relative, absolute, fixed, sticky, along with this we can use 
+    top:  ,left:  ,right:  ,bottom:  -->
+
+    <style>
+        .container{
+            border: 3px solid green;
+            width: 3334px;
+            height: 3434px;
+        }
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            margin: 4px;
+            width: 150px;
+            height: 150px;
+        }
+
+        #box3 
+        {
+            /* relative: It will change his position relative to its normal position where it's already */
+            /* position: relative;
+            top: 34px;
+            left: 8px; */
+
+            /* absolute: It will change his position relative to its first parent (container) */
+            /* position: absolute;
+            top: 34px;
+            left: 8px; */
+
+            /* fixed: Its position will be fixed relative to browser while we are scrolling */
+            /* position: fixed;
+            margin: auto 333px; */
+
+            /* sticky: It will stick on its position and rest of the conten move automatically */
+            /* In position:sticky only top:  will work accurate same like position:fixed */
+            position: sticky;
+           /* top: 64px; */ /*  It will stick on its positon while scrolling  */
+            margin: auto 333px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

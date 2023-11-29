@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+    <style>
+        .container{
+            display: flex;
+            top:0;
+            background-color: green;
+        }
+        .box{
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: hassan;
+            /* It is use to set time duration of animation  */
+            animation-duration: 0.2s;
+            /* It is use to set how many time animation will occur  */
+            /* animation-iteration-count: 4; */
+            /* Animation will run contineously upto infinite time  */
+            animation-iteration-count: infinite;
+
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: alternate; */
+
+            /* In starting animation will slow then fast  */
+            /* animation-timing-function: ease-in; */
+
+            /* The animation will fast at first, then slow down and end  */
+            /* animation-timing-function: ease-out; */
+
+            /* The animation will slow at first, then speed up then slow down and end */
+            animation-timing-function: ease-in-out;
+
+            /* Animation will start after 3s  */
+            animation-delay: 2s;
+
+            /* Animation will start and go up to end point and come back in the same manner up to no of count  */
+            animation-direction:alternate;
+
+            /* Animation will start from end point and go forward and backward up to no. of itteration count in 
+            the same manner  */
+            /* animation-direction: alternate-reverse; */
+        }
+        
+        @keyframes hassan2 {
+            /* This is use to move box in square formate  */
+            /* When animation is at 0% then this property will applied  */
+            0%{
+                top:0px;
+                left:0px;
+            }
+            /* When animation complete his 25% then this property will applied  */
+            25%{
+                top:250px;
+                left:0px;
+            }
+             /* When animation complete his 75% then this property will applied  */
+            75%{
+                top:250px;
+                left:250px;
+            }
+             /* When animation complete his 100% then this property will applied  */
+            100%{
+                top:0px;
+                left:250px;
+            }
+        }
+        @keyframes hassan {
+            /* It is use to define starting point of animation, from where animation will start  */
+            from{
+                width: 250px;
+            }
+            /* It is use to define ending point of animation, at where animation will end  */
+           to{
+            width: 900px;
+           } 
+         } 
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <h1>This is box </h1>
+        </div>
+    </div>
+</body>
+</html>

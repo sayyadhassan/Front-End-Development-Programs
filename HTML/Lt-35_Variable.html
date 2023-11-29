@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable/Custom Properties</title>
+    <style>
+        /* This is same like universal selector or we can say like global variable means we can use it 
+        anywhere in the same html file  */
+        :root{
+            /* These are the varaibles in CSS, define once and use anywhere any no. of times  */
+            --primary-color: blue;
+            --danger-color: red;
+            --maxwidth: 400px;
+        }
+        
+        .container{
+            display: flex;
+            background-color: var(--danger-color);
+            width: var(--maxwidth);
+            margin: auto;
+            justify-content: center;
+        }
+        .box{
+            /* This is varaible in CSS, it has scope in the same .box class  */
+            --box-color: blue;
+            height: 200px;
+            width: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            margin: 2px 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

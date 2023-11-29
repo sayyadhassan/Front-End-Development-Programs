@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* This is universal selector which will be applied to all elements */
+        *{
+            border-style:dashed;
+            border-radius: 10px;
+        }
+
+        .container{
+            background-color: rgb(40, 186, 206);
+            border:3px solid red;
+            /* We can set padding/margin for top,bottom,left and right like this */
+            padding-top: 79px;
+            padding-bottom: 40px;
+            padding-left: 30px;
+            padding-right: 90px;
+
+            /* This is default padding for all side 79 pixel */
+            /* padding: 79px;  */
+
+            /* padding/margin: y(top/bottom) x(left/right) */
+            padding: 34px 19px;    /* 34 pixel from top & bottom and 19 pixel from left & right */
+            /* padding: 20px 99px 30px 40px;  padding: top, right, bottom, left
+            margin: 14px 20px;
+            width: 550px;
+            
+            /* Due to this left and right padding will be fixed when we increased through insepect mode in browser */
+            box-sizing: border-box;
+
+            /* This is default margin for all side 34 pixel */
+            /* margin: 34px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+         <div class="box">
+          <h3>This is my heading</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente suscipit magnam quo fugiat
+            voluptas doloremque natus consequuntur, adipisci corporis ut facilis nam laudantium quae eaque. Quo dolorum
+            consectetur iure sint?</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente suscipit magnam quo fugiat
+            voluptas doloremque natus consequuntur, adipisci corporis ut facilis nam laudantium quae eaque. Quo dolorum
+            consectetur iure sint?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente suscipit magnam quo fugiat
+            voluptas doloremque natus consequuntur, adipisci corporis ut facilis nam laudantium quae eaque. Quo dolorum
+            consectetur iure sint?</p>
+    </div>
+</body>
+
+</html>

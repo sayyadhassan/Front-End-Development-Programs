@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            /* 100% height will take equal height of the item/content  */
+            height:600px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initializes the container as a flex box */
+            display: flex;
+
+            /* Flex properties for flex container */
+
+            /* It's bydefault value of flex is row, boxes will set in row at the top of container */
+            /* flex-direction: row; */
+            /* Boxes will set in column to the left of container, height and width will set automatically 
+            according to space and which we have given */
+            /* flex-direction: column; */
+            /* Boxes will set in row to the top-right of container in reverse oreder like-5,4,3,2 */
+            /* flex-direction: row-reverse; */
+            /* Boxes will set in column to the left of container in reverse order, height and width will set
+               automatically according to space and which we have given */
+            /* flex-direction: column-reverse; */
+
+            /* Item will wrap serial wise from top to bottom when we zoom-in and zoom-out */
+            flex-wrap: wrap;
+            /* Item will move to the bottom of container and will wrap from bottom to top */
+            /* flex-wrap: wrap-reverse; */
+
+            /* we can set flex-direction and flex-wrap simetanously in this manner */
+            /* flex-flow: row-reverse wrap; */
+
+            
+            /* justify-content is used to maintain/justify the horizontal spaces of item automatically
+             according container */
+
+            /* Item will move in centre vertaically*/
+            /* justify-content: center; */
+            /* Vertacal spaces between only items will same */
+            justify-content: space-between;
+            /* Vertical space of item also from border will same  */
+            /* justify-content: space-evenly; */
+            /*Its like margin of each item will same that's why spaces between two item will show up more than
+               border */
+            /* justify-content: space-around; */
+
+            /* align-items is used to maintain the vertical spaces of item automatically according to container  */
+
+            /* Item will move in centre horizontally */
+            align-items: center;
+            /* Item will move to the bottom of container  */
+            /* align-items: flex-end; */
+            /* Item will move to the top of the container  */
+            /* align-items: flex-start; */
+            /* Item will fixed in centre and spaces from border will remain same when we decrease its 
+               width and height  */
+            /* align-items:self; */
+
+            /* It is use to maintain the gap betweeen two rows of items  */
+            /* row-gap: 9px; */
+            /* It is use to maintian the gag between column of items  */
+            /* column-gap: 20px; */
+            /* Shorthand of row and column gap  */
+            /* gap:20px; */
+
+            /* Used to maintain the sapce between rows of items  */
+            /* Row will make to the bottom of container  */
+            /* align-content: flex-end; */
+            /* align-content: space-around; */
+            /* Space from border and between rows of items will same */
+            /* align-content: space-evenly; */
+            /* Space between rows will same  */
+            /* align-content: space-between; */
+
+        }
+        .item{
+            /* Max height and width will equally distributed in items according what's the height and width
+               of screen or veiw portion  */
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 8px;
+            padding: 3px;
+        }
+        #item-1{
+
+            /* flex-item properties should be use for each item sepratly */
+
+            /* Flex properties for flex item  */
+            /* Using this we can change order of items, heigest the order,later it shows up in the container */
+            /* order: 2; */
+
+            /* flex-grow is used to increase the width of item according to space when we  zoom-out,
+             which item has heigest value then width also will increase more  */
+            /* flex-grow: 2; */
+            /* flex-shrink is used to decrease the width of item according to space when we  zoom-in,
+            heigest value, width will less  */
+            /* flex-shrink: 3; */
+        }
+        #item-2{
+            /* Using this we can change order of items, heigest the order,later it shows up in the container */
+            /* order:3; */
+
+            /* flex-grow: 4; */
+            /* flex-shrink: 5; */
+            /* when flex-direction is set to row(flex-direction: row;) it will control the width,basically
+            it will increase height and width  */
+            /* when flex-direction is set to column(flex-direction: column;) it will control the width,
+            basically it will increase height and width */
+            /* flex-basis: 600px; */
+        }
+        #item-3{
+            /* We can set flex-grow, flex-shrink and flex-basis simentanously int this manner  */
+            /* flex: 2 2 230px; */
+
+            /* Item will move to the top of container  */
+            /* align-self: flex-start; */
+            /* Item will move to the bottom of container  */
+            /* align-self: flex-end; */
+            /* Item will move to the centre of container  */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <h2>This is HEADING</h2>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <!-- <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

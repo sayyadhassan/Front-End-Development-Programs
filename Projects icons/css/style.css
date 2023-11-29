@@ -1,0 +1,161 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar  */
+#navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:0;
+    font-family:'Roboto Slab', serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Navigation Bar: Logo  */
+/* #logo{
+    margin: 2px 4px;
+} */
+
+/* Navigation Bar: Logo/image  */
+#logo img{
+    margin: 2px 34px;
+    height: 35px;
+}
+
+/* Navigation Bar: List(ul) Styling  */
+#navbar ul{
+    display: flex;
+}
+
+/* Navigation Bar: List(li) Styling  */
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+/* Navigation Bar: List(li a) Styling  */
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    margin: 34px;
+    padding: 25px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    
+}
+
+#home::before{
+    content: "";
+    background: url(../Header.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top:0px;
+    left: 0px;
+}
+
+
+#home p{
+    color: rgb(15, 167, 98);
+    text-align: center;
+    font-size: 1rem;
+    font-family:'Bree Serif', serif;
+}
+
+.btn{
+    padding: 2px 9px;
+    border: 2px solid white;
+    background-color:rgb(228, 137, 137);
+    border-radius: 9px;
+    margin: 12px;
+    font-size: 1.1rem;
+    font-family:'Roboto Slab', serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Services Section  */
+#services{
+    margin: 0px 34px 9px 34px;
+    display: flex;
+    direction: row;
+}
+
+#services .box{
+    border: 2px solid brown;
+    height: 100%;
+    padding: 9px;
+    margin: 9px;
+    border-radius: 23px;
+    background-color: rgb(230, 223, 223);
+}
+
+#services .box img{
+    height: 160px;
+    border-radius: 23px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-size: 0.9rem;
+    font-family:'Bree Serif', serif;
+}
+.Services-Container h1{
+    margin-top: 50px;
+    margin-bottom: 4px;
+} 
+
+
+
+/* Utilty Classes  */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 9px;
+    color: rgb(53, 231, 178);
+    text-align: center;
+    font-family:'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 1.3rem;
+    font-family:'Bree Serif', serif;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+

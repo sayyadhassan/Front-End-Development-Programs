@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 230px;
+            margin: auto;
+            border: 2px solid red;
+            text-align: center;
+        }
+
+        /* This property will apply only for input which type is text, in syntax, also take care of spaces and 
+        single quotes  */
+        input[type='text'] {
+            border: 2px solid green;
+        }
+
+        /* This property will apply only for input type is email, in syntax also take care of spaces and 
+        double quotes  */
+        input[type='email']{
+            border: 3px solid brown;
+        }
+        
+        /* This property will apply only for a (anchor) which contain 'target'  */
+        a[target] {
+            font-size: 23px;
+            color: rgb(236, 121, 140);
+        }
+
+        /* This property will apply only for a (anchor) which target type is self  */
+        a[target='_self']{
+            font-size: 40px;
+            color: red;
+        }
+
+        /* This will apply css for third child of li (list)  */
+        /* li:nth-child(3){
+            color: cyan;
+        } */
+
+        /* This will apply css on every next second child of the list  */
+        /* li:nth-child(2n){
+            color:red;
+        } */
+
+        /* This will apply css for every odd position child of list  */
+        /* li:nth-child(odd){
+            color:yellow;
+        } */
+
+        /* This property will apply on evry even postion child of the list  */
+        li:nth-child(even){
+            color:brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> <a href="http://google.com" target="_blank">Go to Google</a></h1>
+
+         <!-- This site will open in the same tab which is default  -->
+        <h1> <a href="http://facebook.com" target="_self">Go to Facebook</a></h1>    
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter the password">
+            <input type="sumbit" value="Sumbit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">I am item-1</li>
+            <li class="item" id="item-2">I am item-2</li>
+            <li class="item" id="item-3">I am item-3</li>
+            <li class="item" id="item-4">I am item-4</li>
+            <li class="item" id="item-5">I am item-5</li>
+            <li class="item" id="item-6">I am item-6</li>
+        </ul>
+    </div>
+</body>
+
+</html>

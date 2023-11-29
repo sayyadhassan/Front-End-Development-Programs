@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders, Background and Image</title>
+    <style>
+        #firstPara {
+            background-color: red;
+            
+            height: 75px;   /* This is height of paragraph  */
+
+            width: 355px;   /*  This is width of paragraph  */
+
+             /* border-width: 4px;
+            border-color: green;
+            border-style: solid; */
+
+            border: 2px solid green;     /* Border, Color and Style all can be together in this Manner */
+            border-radius: 10px;     /* Minimum and Maximum Border radius will be (0 to 30) */
+           
+           
+        }
+ 
+        #secondPara {
+            background-color: rgb(27, 160, 212);
+            height: 50px;
+            width: 355px;
+             
+            /* Top, Bottom, Left and Right border can be different */
+            border-top: 8px solid red;
+            border-bottom: 3px solid orange;
+            border-left: 4px solid violet;
+            border-right: 2px solid brown;
+
+            /* Top-left, Top-right, Bottom-left and Bottom-right Radius also can be different */
+            border-top-left-radius: 12px;
+            border-top-right-radius: 18px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 28px;
+        } 
+
+        #thirdPara {
+            border: 2px solid red;
+            /* Basically this is height and width of Paragraph */
+            height: 900px;
+            width: 355px;
+
+            /* This is for to add image in background */
+            background-image: url('hassan.png');
+            /* background-image: url('https://www.codewithharry.com/_next/image/?url=%2Fimg%2Flogo-blue.png&w=48&q=75'); */
+             background-size: 250px 300px; /* This is for the size of background image including height and width */
+
+            background-repeat: no-repeat;  /*  repeat-x and repeat-y will make it repeat on x and y axis */
+
+           /* background-position: 200px 35px;   /* image moved 200 pixel from left border, 35 pixel from top  */
+
+            /* This is used to set the position of background image  */
+            /* Here order is not preserve, top center and center top, center left and left center both are
+             same */
+            /* background-position: top center;             */
+            /* background-position: center top; */   
+            /* background-position: bottom center; */    
+             background-position: center center;
+            /* background-position: left center;  */
+            /* background-position: center right; */
+            /* background-position: top left; */
+            /* background-position: top right; */
+            /* background-position: bottom left; */
+            /* background-position: bottom right;  */
+            /* background-position: center; */
+
+         }    
+     
+    </style>
+</head>
+
+<body>
+    <h3>This is First Heading</h3>
+    <p id="firstPara">This is simple paragraph first</p>
+
+    <h3>This is Second Heding</h3>
+    <p id="secondPara">This is paragraph second</p>
+
+    <h3>This is Third Heading</h3>
+    <p id="thirdPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatibus animi dignissimos
+        totam, quibusdam odit esse. Sint perspiciatis labore exercitationem illum quia eveniet modi fugit incidunt?
+        Magni error sed sunt possimus ducimus, fugiat omnis.</p>
+</body>
+
+</html>

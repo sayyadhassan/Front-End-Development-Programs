@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 9px;
+
+            /* It will set the height of first 3 rows in ratio 1:1:4 and rest of the rows height will set automatcally
+            1fr which is default */
+            grid-template-rows: 1fr 2fr 4fr;
+            /* It will set rest all the rows height 2fr, it will set all the rows height 2fr which is not set */
+            grid-auto-rows: 2fr;
+
+            /* grid-template-columns:repeat(3,2fr); */
+        }
+        .item{
+            background-color: red;
+            border: 2px solid balck;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+        <div class="item">This is item-&</div>
+    </div>
+</body>
+</html>

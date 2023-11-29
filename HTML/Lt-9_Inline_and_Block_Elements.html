@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Elements</title>
+    <style>
+        strong{
+            /* Strong is inline element so height and width can't be set  */
+            height: 200px;
+            width: 300px;
+        }
+
+        p{
+            /* It is block element so height and width can be set  */
+            width: 400px;
+            height: 200px;
+        }
+        span{
+            /* It is also inline element  */
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline Element  -->
+    <strong style="border: 2px solid red;"> this is paragraph</strong> 
+    <!-- Block Element  -->
+    <p style="border: 2px solid blue"> this is also paragraph</p>
+
+    <span style="border: 2px solid red"> this is span</span> <span style="border: 2px solid red"> this is also span</span>
+</body>
+</html>

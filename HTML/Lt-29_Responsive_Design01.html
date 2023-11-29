@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            /* font-size: 8px; */
+            border: 2px solid red;
+            /* Its take 100% width according veiw/browser size, border will visible after zoom-in  */
+            width: 100vw ;
+            /* Its take 100% height according veiw/browser size, border will visible after zoom-in  */
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* It will take 3 times size of it parent(container)  */
+            /* font-size: 3em; */
+            /* When we have set font size then it will takes 3 times padding of font size */
+            /* When we set only padding then it takes size (3*parent font-size)*2 */
+            /* padding: 3em; */
+            /* When we have set font size then it will takes 3 times margin of font size  */
+            /* When we set only margin then it takes size (3*parent font-size)*2 */
+            /* margin: 3em; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>

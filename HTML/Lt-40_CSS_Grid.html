@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+
+            /* It will divide the items in 3 column where first column takes 300px width, second column
+            takes 100px width and third column takes also 100px width */
+            /* grid-template-columns: 300px 100px 100px; */
+
+            /* Here first column takes 300px width, third column takes 100px width and second column takes 
+            rest of the width */
+            /* grid-template-columns: 300px auto 100px; */
+
+            /* It will divide the column width in 1:4:1 ratio, where second column is 4 times
+            greater than first and third column  */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+
+            /* It will divide items in 4 column with eqaul widths  */
+            grid-template-columns: repeat(4,auto);
+
+            /* It will set gap/margin between items  */
+            grid-gap: 2rem;
+        }
+        .item{
+            background-color: red;
+            border: 2px solid black;
+            /* text-align: center; */
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-11</div>
+        <div class="item">This is item-12</div>
+        <div class="item">This is item-13</div>
+        <div class="item">This is item-14</div>
+        <div class="item">This is item-15</div>
+    </div>
+</body>
+</html>

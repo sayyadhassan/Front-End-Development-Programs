@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fittness Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('image/Gym_Background-01.jpg');
+        background-size: 1366px 625px;
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        left: 34px;
+        width: 114px;
+
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 520px;
+        margin: 22px auto;
+        padding: 0px;
+    }
+
+    .right {
+        /* border: 2px solid orange; */
+        display: inline-block;
+        position: absolute;
+        top: 22px;
+        right: 21px;
+        width: 215px;
+    }
+
+    .navbar {
+        margin: 2px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* float: left; */
+        margin: 0px 14px;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: grey;
+    }
+
+    #mygym {
+        margin: -19px 0px 0px 17px;
+        color: black;
+    }
+
+    .left img {
+        width: 92px;
+        margin: 0px 0px 0px 9px;
+        /* To change image color from black to white and vice-verse */
+        /* filter:invert(100%); */
+    }
+
+    .btn {
+        background-color: #9b733e;
+        margin: 0px 9px;
+        padding: 3px 4px;
+        font-size: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(44, 42, 42);
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        margin: 113px 104px;
+        padding: 34px 75px;
+        width: 30%;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        margin: 11px auto;
+        width: 254px;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 153pxpx;
+        margin: 11px auto;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <!-- Left box for logo -->
+    <div class="left">
+        <img src="image/Gym-Logo.jpg" alt="">
+        <div id="mygym">My Fittness</div>
+    </div>
+    <!-- Mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculater</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <!-- Right box for button -->
+    <div class="right">
+        <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+    </div>
+    <div class="container">
+        <h2>Welcome to best GYM of Gonda</h2>
+        <form action="noactionJava">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <button class="btn">Sumbit</button>
+        </form>
+    </div>
+</body>
+
+</html>
